@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  PROJECT_NAME: smilecraft-landing
+  PROJECT_NAME: dr-jacobs-landing
 
 jobs:
   deploy:
