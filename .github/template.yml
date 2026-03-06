@@ -1,0 +1,9 @@
+name: Dental Clinic Website Template
+description: A modern, AI-friendly website template for dental clinics. Fully customizable through a single config file.
+labels:
+  - react
+  - vite
+  - tailwind
+  - dental
+  - template
+  - ai-friendly
