@@ -6,7 +6,7 @@ const Disclaimer = () => {
   return (
     <>
       <Helmet>
-        <title>Disclaimer | Smile Craft Dental Clinic</title>
+        <title>Disclaimer | Dr. Jacobs Orthodontic Centre & Advanced Dental Care</title>
       </Helmet>
       <section className="pt-32 pb-20">
         <Container size="small">

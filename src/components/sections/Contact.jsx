@@ -17,64 +17,47 @@ const Contact = () => {
   return (
     <section id="contact" className="section-padding bg-gray-50">
       <Container>
-        <SectionHeading 
-          subtitle={siteConfig.contact.subtitle}
-          title={siteConfig.contact.title}
-        />
-        
+        <SectionHeading subtitle={siteConfig.contact.subtitle} title={siteConfig.contact.title} />
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
           <Card hover={false} className="p-8">
+            <p className="text-gray-600 mb-6">{siteConfig.contact.description}</p>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
-                  <input 
-                    type="text" 
-                    {...register('name', { required: 'Name is required' })}
-                    className={`w-full px-4 py-3 rounded-lg border ${errors.name ? 'border-red-500' : 'border-gray-200'} focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all`}
-                    placeholder="John Doe"
-                  />
-                  {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name.message}</p>}
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
-                  <input 
-                    type="tel" 
-                    {...register('phone', { required: 'Phone number is required' })}
-                    className={`w-full px-4 py-3 rounded-lg border ${errors.phone ? 'border-red-500' : 'border-gray-200'} focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all`}
-                    placeholder="+91 00000 00000"
-                  />
-                  {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone.message}</p>}
-                </div>
-              </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Preferred Service</label>
-                <select 
-                  {...register('service')}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
-                >
-                  <option value="General Consultation">General Consultation</option>
-                  <option value="Smile Design">Smile Design</option>
-                  <option value="Aligners">Aligners</option>
-                  <option value="Root Canal">Root Canal</option>
-                  <option value="Kids Dentistry">Kids Dentistry</option>
-                </select>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                <input
+                  type="text"
+                  {...register('name', { required: 'Name is required' })}
+                  className={`w-full px-4 py-3 rounded-lg border ${errors.name ? 'border-red-500' : 'border-gray-200'} focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all`}
+                  placeholder="Your name"
+                />
+                {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name.message}</p>}
               </div>
+
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Message (Optional)</label>
-                <textarea 
-                  {...register('message')}
-                  rows="4"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
-                  placeholder="Tell us about your concern..."
-                ></textarea>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                <input
+                  type="tel"
+                  {...register('phone', { required: 'Phone number is required' })}
+                  className={`w-full px-4 py-3 rounded-lg border ${errors.phone ? 'border-red-500' : 'border-gray-200'} focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all`}
+                  placeholder="+91 8075059701"
+                />
+                {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone.message}</p>}
               </div>
-              <Button type="submit" className="w-full" size="lg">Send Request</Button>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Preferred Date</label>
+                <input
+                  type="date"
+                  {...register('date')}
+                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+                />
+              </div>
+
+              <Button type="submit" className="w-full" size="lg">Book Appointment</Button>
             </form>
           </Card>
 
-          {/* Contact Info & Map */}
           <div className="space-y-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="flex gap-4">
@@ -102,7 +85,6 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Google Map Embed */}
             <div className="rounded-2xl overflow-hidden border border-gray-100 h-64 shadow-sm bg-gray-200">
               <iframe
                 title="Google Maps"
@@ -115,6 +97,15 @@ const Contact = () => {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
+
+            <a
+              href={siteConfig.clinic.mapLink}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex text-primary-600 font-semibold hover:text-primary-700"
+            >
+              Open in Google Maps
+            </a>
 
             <div className="p-6 rounded-2xl bg-primary-600 text-white flex items-center gap-6">
               <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center shrink-0">

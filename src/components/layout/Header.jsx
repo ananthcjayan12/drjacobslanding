@@ -46,7 +46,7 @@ const Header = () => {
               'font-display font-bold text-lg block leading-none',
               scrolled ? 'text-gray-900' : 'text-primary-900'
             )}>{siteConfig.theme.logo.text}</span>
-            <span className="text-[10px] uppercase tracking-wider text-primary-600 font-semibold">Dental Clinic</span>
+            <span className="text-[10px] uppercase tracking-wider text-primary-600 font-semibold">Orthodontic Centre</span>
           </div>
         </Link>
 
