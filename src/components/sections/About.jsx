@@ -21,7 +21,7 @@ const About = () => {
               <img
                 src={doctor.image}
                 alt={doctor.imageAlt || doctor.name}
-                className="w-full h-64 rounded-xl object-cover mb-5"
+                className="w-full aspect-[4/5] md:aspect-[3/4] rounded-xl object-cover object-top bg-gray-50 mb-5"
               />
               <h3 className="text-2xl font-bold text-gray-900 mb-1">{doctor.name}</h3>
               <p className="text-primary-600 font-semibold mb-4">{doctor.role}</p>

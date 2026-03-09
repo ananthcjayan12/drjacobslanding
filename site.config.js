@@ -5,7 +5,7 @@ export const siteConfig = {
     founder: {
       name: 'Prof Dr. Jacob John & Dr. Maria Jacob',
       title: 'Founder & Lead Dentists',
-      image: '/images/about/dr-pooja.webp'
+      image: '/images/optimized/dr-jacob.webp'
     },
     contact: {
       phone: '+91 8075059701',
@@ -33,7 +33,7 @@ export const siteConfig = {
 
   theme: {
     logo: {
-      image: '/images/logo/logo.jpg',
+      image: '/images/optimized/logo.webp',
       text: 'Dr. Jacobs',
       height: '40px'
     },
@@ -75,7 +75,7 @@ export const siteConfig = {
     headingHighlight: 'Confident Smiles',
     description:
       'Welcome to Dr. Jacobs Orthodontic Centre & Advanced Dental Care in Sulthan Bathery. We combine modern technology with compassionate, patient-first care for children and adults.',
-    image: '/images/hero/hero-patient.webp',
+    image: '/images/optimized/hero-clinic.webp',
     buttons: {
       primary: { text: 'Book Appointment', link: '#contact' },
       secondary: { text: 'Our Services', link: '#services' }
@@ -97,7 +97,7 @@ export const siteConfig = {
       {
         name: 'Prof. Dr. Jacob John',
         role: 'Consultant Specialist Orthodontist',
-        image: '/images/about/dr-pooja.webp',
+        image: '/images/optimized/dr-jacob.webp',
         imageAlt: 'Prof. Dr. Jacob John',
         bio: [
           'Prof. Dr. Jacob John is an internationally recognized Consultant Specialist Orthodontist with over 20 years of experience across Qatar, Oman, the United Kingdom, Ireland, and India.',
@@ -109,8 +109,8 @@ export const siteConfig = {
       {
         name: 'Dr. Maria K. Pullazhi',
         role: 'Chief Dental Surgeon',
-        image: '/images/about/dr-pooja.webp',
-        imageAlt: 'Clinic reception at Dr. Jacobs Orthodontic Centre',
+        image: '/images/optimized/dr-maria.webp',
+        imageAlt: 'Dr. Maria K. Pullazhi',
         bio: [
           'Dr. Maria K. Pullazhi is a highly experienced Chief Dental Surgeon with over 11 years of clinical experience in general dentistry.',
           'She holds a Bachelor of Dental Surgery (BDS) and an MBA in Hospital Administration, combining strong clinical expertise with professional healthcare management skills.',
