@@ -9,10 +9,13 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Dr. Pooja's Smile Craft Dental Clinic | Best Dentist in Ezhupunna</title>
-        <meta name="description" content="Expert dental care in Ezhupunna, Kerala. Smile Craft offers Smile Design, Aligners, Root Canal, Implants and more by Dr. Pooja." />
+        <title>Dr. Jacobs Orthodontic Centre & Advanced Dental Care | Sulthan Bathery</title>
+        <meta
+          name="description"
+          content="Advanced dental and orthodontic care in Sulthan Bathery. Book appointments for smile design, aligners, root canal treatment, implants, whitening and kids dentistry."
+        />
       </Helmet>
-      
+
       <Hero />
       <About />
       <Services />

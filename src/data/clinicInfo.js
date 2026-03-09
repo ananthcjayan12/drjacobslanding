@@ -1,24 +1,22 @@
 export const clinicInfo = {
-  name: "Dr. Pooja's Smile Craft Dental Clinic",
-  slogan: "Crafting Healthy Smiles",
-  founder: "Dr. Pooja",
-  phone: "+91 79070 06842",
-  email: "info@smilecraft.in", // Placeholder
+  name: 'Dr. Jacobs Orthodontic Centre & Advanced Dental Care',
+  slogan: 'Where advanced technology meets compassionate care',
+  founder: 'Prof Dr. Jacob John & Dr. Maria Jacob',
+  phone: '+91 8075059701',
+  email: 'drjacobsortho@gmail.com',
   address: {
-    street: "Sreenarayanapuram, Opposite Family Health Center",
-    city: "Ezhupunna",
-    state: "Kerala",
-    country: "India",
-    pincode: "688537" // Placeholder
+    street: 'Near KSEB Office, Chungam, Ooty Road',
+    city: 'Sulthan Bathery',
+    state: 'Kerala',
+    country: 'India',
+    pincode: '673592'
   },
-  hours: [
-    { day: "Monday – Saturday", time: "9:00 AM – 7:00 PM" },
-    { day: "Sunday", time: "9:00 AM – 3:00 PM" }
-  ],
+  hours: [{ day: 'Monday – Saturday', time: '9:00 AM – 7:00 PM' }],
   social: {
-    facebook: "#",
-    instagram: "#",
-    whatsapp: "https://wa.me/917907006842"
+    facebook: 'https://www.facebook.com/profile.php?id=61586546922972',
+    instagram: 'https://www.instagram.com/dr_jacobs_/',
+    whatsapp: 'https://wa.me/918075059701'
   },
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3931.328394468603!2d76.2974643!3d9.8229647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNDknMjIuNyJOIDc2wrAxNyc1MC45IkU!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+  googleMapsEmbed:
+    'https://maps.google.com/maps?q=Near%20KSEB%20Office%2C%20Chungam%2C%20Ooty%20Road%2C%20Sulthan%20Bathery&t=&z=15&ie=UTF8&iwloc=&output=embed'
 };

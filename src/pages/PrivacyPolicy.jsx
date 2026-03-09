@@ -6,26 +6,38 @@ const PrivacyPolicy = () => {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy | Smile Craft Dental Clinic</title>
+        <title>Privacy Policy | Dr. Jacobs Orthodontic Centre & Advanced Dental Care</title>
       </Helmet>
       <section className="pt-32 pb-20">
         <Container size="small">
           <SectionHeading title="Privacy Policy" />
           <div className="prose prose-gray max-w-none text-gray-600 space-y-6">
-            <p>At Smile Craft Dental Clinic, accessible from our website, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Smile Craft Dental Clinic and how we use it.</p>
+            <p>
+              Dr. Jacobs Orthodontic Centre & Advanced Dental Care values your privacy. This policy explains how we use
+              the personal information submitted on this website.
+            </p>
             <h3 className="text-xl font-bold text-gray-900 mt-8">Information We Collect</h3>
-            <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
-            <p>If you contact us through our booking form, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
-            <h3 className="text-xl font-bold text-gray-900 mt-8">How we use your information</h3>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>To provide, operate, and maintain our website</li>
-              <li>To improve, personalize, and expand our website</li>
-              <li>To understand and analyze how you use our website</li>
-              <li>To develop new products, services, features, and functionality</li>
-              <li>To communicate with you to schedule appointments</li>
-            </ul>
-            <h3 className="text-xl font-bold text-gray-900 mt-8">Log Files</h3>
-            <p>Smile Craft Dental Clinic follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks.</p>
+            <p>
+              We may collect your name, phone number, and preferred appointment date through our contact form.
+            </p>
+            <h3 className="text-xl font-bold text-gray-900 mt-8">How We Use Your Information</h3>
+            <p>
+              We use submitted details only to contact you regarding appointments, treatment queries, and clinic service
+              communication.
+            </p>
+            <h3 className="text-xl font-bold text-gray-900 mt-8">Data Sharing</h3>
+            <p>
+              We do not sell your personal data. Information may be shared only with authorized clinic staff for
+              appointment management and patient support.
+            </p>
+            <h3 className="text-xl font-bold text-gray-900 mt-8">Data Security</h3>
+            <p>
+              We use reasonable safeguards to protect submitted information from unauthorized access or misuse.
+            </p>
+            <h3 className="text-xl font-bold text-gray-900 mt-8">Contact</h3>
+            <p>
+              For privacy-related concerns, contact us at +91 8075059701.
+            </p>
           </div>
         </Container>
       </section>
